@@ -7,7 +7,7 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-def test():
+def SinusoidalMotionTest():
     # 扩展卡尔曼滤波
     # 状态转移方程为：x(k) = sin(3 * x(k-1)), 注意这里没有控制量
     # 观测方程为：y(k) = x(k)^2
@@ -76,10 +76,11 @@ def test():
     plt.plot(t, y, "b-")
     plt.plot(t, xPlus, "g-")
     plt.show()
+    
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
-    test()
+    # SinusoidalMotionTest()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
